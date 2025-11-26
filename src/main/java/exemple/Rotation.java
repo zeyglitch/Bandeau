@@ -7,8 +7,7 @@ public class Rotation extends Effet {
     public void jouerSur(Bandeau b) {
         String oldMessage = b.getMessage();
         b.setMessage("Je tourne !");
-        
-        // Tour complet
+    
         for (int i = 0; i <= 100; i++) {
             b.setRotation(2 * Math.PI * (i / 100.0));
             b.sleep(10);

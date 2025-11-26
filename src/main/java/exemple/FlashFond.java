@@ -11,8 +11,7 @@ public class FlashFond extends Effet {
         Color oldFore = b.getForeground();
         
         b.setMessage("Attention les yeux !");
-        
-        // On inverse les couleurs (Fond noir, texte blanc / Fond blanc, texte noir)
+
         for (int i = 0; i < 6; i++) {
             b.setBackground(Color.BLACK);
             b.setForeground(Color.WHITE);
@@ -22,8 +21,7 @@ public class FlashFond extends Effet {
             b.setForeground(Color.BLACK);
             b.sleep(150);
         }
-        
-        // Restauration impérative
+
         b.setBackground(oldBack);
         b.setForeground(oldFore);
     }

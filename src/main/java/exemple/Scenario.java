@@ -6,8 +6,7 @@ import java.util.List;
 import bandeau.Bandeau;
 
 public class Scenario {
-    
-    // Classe interne privée : simple structure de données
+
     private static class Etape {
         Effet effet;
         int repetitions;

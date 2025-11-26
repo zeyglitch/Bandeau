@@ -17,24 +17,17 @@ public class MonScenario {
         
         Scenario s = new Scenario();
         
-        // --- Ajout des effets ---
-        
-        // 1. Introduction style machine à écrire
-        b.setMessage("Bienvenue sur le TP"); // Message initial pour le teletype
+        b.setMessage("Bienvenue sur le TP"); 
         s.ajouterEffet(new Teletype(), 1);
-        
-        // 2. Un peu d'action
+
         s.ajouterEffet(new Zoom(), 1);
         s.ajouterEffet(new Tremblement(), 1);
+
+        s.ajouterEffet(new ArcEnCiel(), 1);
+        s.ajouterEffet(new FlashFond(), 2);
         
-        // 3. Partie colorée
-        s.ajouterEffet(new ArcEnCiel(), 1); // Défilement de couleurs de police
-        s.ajouterEffet(new FlashFond(), 2); // Flash du fond
-        
-        // 4. Final
         s.ajouterEffet(new Rotation(), 1);
 
-        // --- Lancement ---
         b.sleep(500);
         s.jouerSur(b);
         

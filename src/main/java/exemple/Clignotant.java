@@ -11,7 +11,7 @@ public class Clignotant extends Effet {
         b.setMessage("Je clignote !");
         Color oldColor = b.getForeground();
         
-        for (int i = 0; i < 3; i++) { // Clignote 3 fois rapidement
+        for (int i = 0; i < 3; i++) {
             b.setForeground(Color.RED);
             b.sleep(100);
             b.setForeground(Color.BLACK);
